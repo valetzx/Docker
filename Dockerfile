@@ -17,8 +17,6 @@ EXPOSE 80 8888 443 5130 5131 5132 5133 5134 5135 3306 9993/udp
 
 ## NOTE: to retain configuration; mount a Docker volume, or use a bind-mount, on /var/lib/zerotier-one
 
-FROM debian:buster-slim as builder
-
 ## Supports x86_64, x86, arm, and arm64
 
 RUN apt-get update && apt-get install -y curl gnupg
